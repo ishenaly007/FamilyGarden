@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.func.treeshops.TreeShopsFragment"
+    android:background="@drawable/elka"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="54dp"
+        android:paddingHorizontal="16dp"
+        android:id="@+id/recyclerView_tree_shops"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/shops_item"
+        app:spanCount="2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:alpha="0.3"
+        android:background="@color/white_green"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Магазины"/>
+</FrameLayout>

@@ -35,7 +35,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_phone"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/MyTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginTop="28dp"
@@ -55,7 +55,7 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_password"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        style="@style/MyTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginTop="20dp"
@@ -91,6 +91,7 @@
     <com.google.android.material.button.MaterialButton
         android:layout_gravity="center"
         android:layout_marginTop="28dp"
+        android:id="@+id/btn_login"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:textAllCaps="false"

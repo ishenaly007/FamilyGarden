@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.func.ecoblog.EcoBlogFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="54dp"
+        android:paddingHorizontal="16dp"
+        android:id="@+id/recyclerView_eco_blog"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/blogs_item"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/white_green"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Эко блог"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_more_blogs"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="28dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="88dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="Еще больше"
+        app:cornerRadius="6dp"
+        android:textColor="@color/dark_green"
+        style="?attr/materialButtonOutlinedStyle"/>
+
+</FrameLayout>

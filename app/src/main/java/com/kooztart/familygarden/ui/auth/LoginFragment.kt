@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.kooztart.familygarden.R
 import com.kooztart.familygarden.databinding.FragmentLoginBinding
 
@@ -21,6 +22,11 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        binding!!.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.main)
+        }
+        binding!!.btnGoToAuth.setOnClickListener {
+            findNavController().navigate(R.id.authFragment)
+        }
     }
 }
